@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio de Sesión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(12, 10, 31);
+    }
+
+    #login-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 200px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="login-form">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="username" placeholder="Nombre de usuario" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button onclick="login()">Iniciar Sesión</button>
+  </div>
+
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Aquí puedes agregar lógica de autenticación
+      // Por ejemplo, verificar si el nombre de usuario y la contraseña son válidos
+      // Pero recuerda que esta es solo una simulación básica en el lado del cliente
+      alert('Usuario: ' + username + '\nContraseña: ' + password);
+    }
+  </script>
+   
+</body>
+</html>
